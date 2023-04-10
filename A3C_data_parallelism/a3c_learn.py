@@ -245,7 +245,7 @@ class A3Cworker(threading.Thread):
                 batch_action.append(action)
                 batch_reward.append(train_reward)
                 # 상태 업데이트
-                state = next_state[0]
+                state = next_state
                 episode_reward += reward[0]
                 step += 1
                 # 배치가 채워지면 워커 학습 시작
